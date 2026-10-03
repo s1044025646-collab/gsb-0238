@@ -1,0 +1,22 @@
+{
+  "name": "loan-scheduler",
+  "version": "1.0.0",
+  "description": "固定月息分期还款试算与提前还款对照（本地后端，API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "typescript": "^5.5.0"
+  }
+}
+
